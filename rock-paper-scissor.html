@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+</head>
+<body>
+    
+    <p>ROCK PAPER SCISSOR GAME</p> 
+
+   
+    <button onclick="
+    
+        const randomNumber = Math.random();      //math.random generate random number 0-1
+        let computerMoves = '';     //To compare the move to get result. Create scope computerMove outside {}
+    
+        if (randomNumber >= 0 && randomNumber < 1/3) {
+        // console.log('rock')        //This code computer randomly select a move          
+            computerMoves = 'rock';
+        } else if (randomNumber >= 1/3 && randomNumber < 2/3) {
+        // console.log('paper')        //This code computer randomly select a move
+            computerMoves = 'paper';
+        } else if (randomNumber >= 2/3 && randomNumber < 1) {
+        // console.log('scissor')       //This code computer randomly select a move
+            computerMoves = 'scissor';
+        }
+
+        // console.log(computerMove);
+
+        let result = '';
+        if (computerMoves === 'rock') {
+            result ='Tie';
+        } else if (computerMoves === 'paper') {
+            result = 'You Lose'
+        } else if (computerMoves === 'scissor') {
+            result = 'You Win'
+        }
+
+        alert(`You picked rock. Computer picked ${computerMoves}. ${result}`);   //To create pop-up to display result
+
+    ">Rock</button>
+
+    <button onclick="
+
+        const randomNumber = Math.random();      //math.random generate random number 0-1
+        let computerMoves = '';     //To compare the move to get result. Create scope computerMove outside {}
+    
+        if (randomNumber >= 0 && randomNumber < 1/3) {
+        // console.log('rock')        //This code computer randomly select a move          
+            computerMove = 'rock';
+        } else if (randomNumber >= 1/3 && randomNumber < 2/3) {
+        // console.log('paper')        //This code computer randomly select a move
+            computerMoves = 'paper';
+        } else if (randomNumber >= 2/3 && randomNumber < 1) {
+        // console.log('scissor')       //This code computer randomly select a move
+            computerMoves = 'scissor';
+        }
+        // console.log(computerMove);
+    
+        let result = '';
+        if (computerMoves === 'rock') {
+            result ='You Win';
+        } else if (computerMoves === 'paper') {
+            result = 'Tie'
+        } else if (computerMoves === 'scissor') {
+            result = 'You Lose'
+        }
+
+        alert(`You picked paper. Computer picked ${computerMoves}. ${result}`);   //To create pop-up to display result
+
+    ">Paper</button>
+
+
+    <button onclick="
+
+        const randomNumber = Math.random();      //math.random generate random number 0-1
+        let computerMove = '';     //To compare the move to get result. Create scope computerMove outside {}
+    
+        if (randomNumber >= 0 && randomNumber < 1/3) {
+        // console.log('rock')        //This code computer randomly select a move          
+            computerMove = 'rock';
+        } else if (randomNumber >= 1/3 && randomNumber < 2/3) {
+        // console.log('paper')        //This code computer randomly select a move
+            computerMove = 'paper';
+        } else if (randomNumber >= 2/3 && randomNumber < 1) {
+        // console.log('scissor')       //This code computer randomly select a move
+            computerMove = 'scissor';
+        }
+
+        // console.log(computerMove);
+
+        let result = '';
+        if (computerMove === 'rock') {
+            result ='You Lose';
+        } else if (computerMove === 'paper') {
+            result = 'You Win'
+        } else if (computerMove === 'scissor') {
+            result = 'Tie'
+        }
+
+        alert(`You picked scissor. Computer picked ${computerMove}. ${result}`);   //To create pop-up to display result
+
+    ">Scissor</button>
+    
+
+
+
+
+    <script>
+
+        /* Steps: When we click a button- 
+        1) Computer randomly select a move. 
+        2) Compare the move to get the result. 
+        3) Display a result in a pop-up 
+        
+          0-1/3 : rock
+          1/3-2/3 : paper
+          2/3-1 : scissor
+        
+        */
+      
+    </script>
+
+
+</body>
+</html>
