@@ -3,16 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Functions</title>
+    <title>Functions Exercise</title>
 </head>
 <body>
 
     <script>
-        function () {
+        /* 1. Create a function called 'greet' that display the message 'Hello!' in the console. Call/run this function few times using: greet();
+        
+        2. Continue from 1, add parameter called 'name' to the 'greet' function & display the message 'Hello ${name}!'
+        Call the function few times with different names: greet('Lily');
 
+        3. Try calling greet() without a name(it will display 'Hello undefined!'). Modify the function so that if 'name' is undefined, it will display 'Hello there!' instead.
+
+        (So,we use an if-statement, since 'undefined' is falsy value, wecan use: if(!name){...} to check if 'name' is undefined)
+        */
+
+
+        function greet(name) {
+
+            if(!name) {
+                console.log('Hi there!')
+            } else {
+                console.log(`Hello ${name}`)
+            }
             
         }
-
+        greet('Lily');
+        greet('Simon');
+        greet();
 
 
     </script>
